@@ -1,0 +1,504 @@
+2026-05-12 18:23:02,907 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 18:23:02,908 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 18:23:02,910 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 18:24:13,257 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 18:24:13,259 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 18:24:13,286 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 18:24:13,310 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 18:24:13,311 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 18:24:34,173 - CLI - INFO - [CLI] Processing query: What company did nancy pelosi recently invest in
+2026-05-12 18:24:34,180 - ClarityAgent - INFO - ==================================================
+2026-05-12 18:24:34,181 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 18:24:34,181 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: What company did nancy pelosi recently invest in
+2026-05-12 18:24:34,560 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:24:34,582 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 18:24:34,582 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which company did Nancy Pelosi recently invest in?
+2026-05-12 18:24:43,672 - CLI - INFO - [CLI] Resuming with clarification: what
+2026-05-12 18:24:43,676 - ClarityAgent - INFO - ==================================================
+2026-05-12 18:24:43,676 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 18:24:43,676 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: What company did nancy pelosi recently invest in
+2026-05-12 18:24:44,394 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:24:44,396 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 18:24:44,396 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which company did Nancy Pelosi recently invest in?
+2026-05-12 18:27:38,088 - CLI - INFO - [CLI] Processing query: nvidia stocks
+2026-05-12 18:27:38,091 - ClarityAgent - INFO - ==================================================
+2026-05-12 18:27:38,092 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 18:27:38,092 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: nvidia stocks
+2026-05-12 18:27:38,523 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:27:38,524 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 18:27:38,524 - ClarityAgent - INFO - [ClarityAgent] Identified company: Nvidia
+2026-05-12 18:27:38,528 - ResearchAgent - INFO - ==================================================
+2026-05-12 18:27:38,528 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 18:27:38,529 - ResearchAgent - INFO - [ResearchAgent] Company: Nvidia
+2026-05-12 18:27:38,529 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 18:27:38,529 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 18:27:38,529 - SearchTools - INFO - [Tavily] Searching: Nvidia company overview
+2026-05-12 18:27:41,650 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:27:41,650 - SearchTools - INFO - [Tavily] Searching: Nvidia CEO founder
+2026-05-12 18:27:44,298 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:27:44,298 - SearchTools - INFO - [Tavily] Searching: Nvidia latest news 2024 2025
+2026-05-12 18:27:47,775 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:27:47,776 - SearchTools - INFO - [Tavily] Searching: Nvidia financial revenue
+2026-05-12 18:27:49,792 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:27:49,792 - SearchTools - INFO - [Tavily] Searching: Nvidia competitors market position
+2026-05-12 18:27:51,751 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:27:51,751 - SearchTools - INFO - [Tavily] Multi-search complete: 15 unique results
+2026-05-12 18:27:51,752 - ResearchAgent - INFO - [ResearchAgent] Obtained 15 total results
+2026-05-12 18:27:54,841 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:27:54,842 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 18:27:54,842 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 18:27:54,842 - ResearchAgent - INFO - [ResearchAgent] Tracked 7 sources
+2026-05-12 18:27:54,846 - ReflectionAgent - INFO - ==================================================
+2026-05-12 18:27:54,846 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 18:27:54,846 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Nvidia
+2026-05-12 18:27:54,847 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 18:27:54,847 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 18:27:55,865 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:27:55,867 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 18:27:55,868 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on Nvidia stocks is comprehensive, covering various aspects such as company overview, leadership, financial information, recent news, mar...
+2026-05-12 18:27:55,869 - SynthesisAgent - INFO - ==================================================
+2026-05-12 18:27:55,869 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 18:27:55,869 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Nvidia
+2026-05-12 18:27:55,869 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 7 sources
+2026-05-12 18:27:57,607 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:27:57,608 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (2805 chars)
+2026-05-12 18:27:57,608 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 18:28:52,102 - CLI - INFO - [CLI] Processing query: what about gamestop shares
+2026-05-12 18:28:52,105 - ClarityAgent - INFO - ==================================================
+2026-05-12 18:28:52,105 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 18:28:52,105 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: what about gamestop shares
+2026-05-12 18:28:52,645 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:28:52,646 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 18:28:52,647 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which company's shares, specifically GameStop, would you like me to research?
+2026-05-12 18:29:00,814 - CLI - INFO - [CLI] Resuming with clarification: gamestop
+2026-05-12 18:29:00,817 - ClarityAgent - INFO - ==================================================
+2026-05-12 18:29:00,817 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 18:29:00,817 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: what about gamestop shares
+2026-05-12 18:29:01,200 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:29:01,202 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 18:29:01,202 - ClarityAgent - INFO - [ClarityAgent] Identified company: GameStop
+2026-05-12 18:29:01,207 - ResearchAgent - INFO - ==================================================
+2026-05-12 18:29:01,208 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 18:29:01,208 - ResearchAgent - INFO - [ResearchAgent] Company: GameStop
+2026-05-12 18:29:01,208 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 18:29:01,209 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 18:29:01,209 - SearchTools - INFO - [Tavily] Searching: GameStop company overview
+2026-05-12 18:29:04,523 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:29:04,523 - SearchTools - INFO - [Tavily] Searching: GameStop CEO founder
+2026-05-12 18:29:07,256 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:29:07,256 - SearchTools - INFO - [Tavily] Searching: GameStop latest news 2024 2025
+2026-05-12 18:29:11,030 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:29:11,030 - SearchTools - INFO - [Tavily] Searching: GameStop financial revenue
+2026-05-12 18:29:13,079 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:29:13,079 - SearchTools - INFO - [Tavily] Searching: GameStop competitors market position
+2026-05-12 18:29:15,124 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 18:29:15,124 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 18:29:15,125 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 18:29:17,702 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:29:17,703 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 18:29:17,704 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 18:29:17,704 - ResearchAgent - INFO - [ResearchAgent] Tracked 7 sources
+2026-05-12 18:29:17,707 - ReflectionAgent - INFO - ==================================================
+2026-05-12 18:29:17,708 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 18:29:17,708 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: GameStop
+2026-05-12 18:29:17,708 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 18:29:17,708 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 18:29:18,911 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:29:18,914 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 18:29:18,914 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on GameStop shares covers various aspects such as company overview, leadership, financial information, recent news, market position, comp...
+2026-05-12 18:29:18,915 - SynthesisAgent - INFO - ==================================================
+2026-05-12 18:29:18,915 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 18:29:18,916 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: GameStop
+2026-05-12 18:29:18,916 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 7 sources
+2026-05-12 18:29:20,796 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 18:29:20,827 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (3452 chars)
+2026-05-12 18:29:20,831 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 20:05:54,156 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 20:05:54,157 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 20:05:54,161 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 20:05:54,184 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 20:05:54,185 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 20:06:09,344 - CLI - INFO - [CLI] Processing query: Hello. what companies to invest in
+2026-05-12 20:06:09,356 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:06:09,356 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:06:09,356 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Hello. what companies to invest in
+2026-05-12 20:06:10,402 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:06:10,419 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:06:10,419 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which specific companies or industries are you considering for investment?
+2026-05-12 20:06:10,420 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:06:22,522 - CLI - INFO - [CLI] Resuming with clarification: Construction
+2026-05-12 20:06:22,526 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:06:22,526 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:06:22,526 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Hello. what companies to invest in
+2026-05-12 20:06:23,201 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:06:23,202 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:06:23,202 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which specific companies or industries are you considering for investment?
+2026-05-12 20:06:23,202 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:06:35,533 - CLI - INFO - [CLI] Processing query: construction
+2026-05-12 20:06:35,536 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:06:35,536 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:06:35,537 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: construction
+2026-05-12 20:06:36,002 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:06:36,003 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:06:36,003 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which construction company would you like to know about?
+2026-05-12 20:06:36,003 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:06:40,277 - CLI - INFO - [CLI] Resuming with clarification: any
+2026-05-12 20:06:40,281 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:06:40,282 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:06:40,282 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: construction
+2026-05-12 20:06:40,713 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:06:40,714 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:06:40,715 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which construction company would you like to know about?
+2026-05-12 20:06:40,715 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:10:08,512 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 20:10:08,514 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 20:10:08,519 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 20:10:08,545 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 20:10:08,546 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 20:10:25,122 - CLI - INFO - [CLI] Processing query: tell me about nvidias recent earning
+2026-05-12 20:10:25,135 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:10:25,135 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:10:25,136 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about nvidias recent earning
+2026-05-12 20:10:25,696 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:10:25,715 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 20:10:25,715 - ClarityAgent - INFO - [ClarityAgent] Identified company: Nvidia
+2026-05-12 20:10:25,716 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 20:10:25,718 - ResearchAgent - INFO - ==================================================
+2026-05-12 20:10:25,718 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 20:10:25,719 - ResearchAgent - INFO - [ResearchAgent] Company: Nvidia
+2026-05-12 20:10:25,719 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 20:10:25,719 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 20:10:25,719 - SearchTools - INFO - [Tavily] Searching: Nvidia company overview
+2026-05-12 20:10:28,852 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:10:28,852 - SearchTools - INFO - [Tavily] Searching: Nvidia CEO founder
+2026-05-12 20:10:31,222 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:10:31,223 - SearchTools - INFO - [Tavily] Searching: Nvidia latest news 2024 2025
+2026-05-12 20:10:34,746 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:10:34,747 - SearchTools - INFO - [Tavily] Searching: Nvidia financial revenue
+2026-05-12 20:10:37,259 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:10:37,260 - SearchTools - INFO - [Tavily] Searching: Nvidia competitors market position
+2026-05-12 20:10:39,310 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:10:39,311 - SearchTools - INFO - [Tavily] Multi-search complete: 15 unique results
+2026-05-12 20:10:39,313 - ResearchAgent - INFO - [ResearchAgent] Obtained 15 total results
+2026-05-12 20:10:42,170 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:10:42,176 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 20:10:42,176 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 20:10:42,176 - ResearchAgent - INFO - [ResearchAgent] Tracked 4 sources
+2026-05-12 20:10:42,177 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 20:10:42,178 - ReflectionAgent - INFO - ==================================================
+2026-05-12 20:10:42,179 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 20:10:42,179 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Nvidia
+2026-05-12 20:10:42,179 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 20:10:42,179 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 20:10:43,296 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:10:43,303 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 20:10:43,303 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research covers various aspects of Nvidia, including company overview, leadership, financial information, recent news, market position, competitor...
+2026-05-12 20:10:43,306 - SynthesisAgent - INFO - ==================================================
+2026-05-12 20:10:43,306 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 20:10:43,307 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Nvidia
+2026-05-12 20:10:43,307 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 4 sources
+2026-05-12 20:10:44,942 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:10:44,944 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (2481 chars)
+2026-05-12 20:10:44,944 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 20:10:52,446 - CLI - INFO - [CLI] Processing query: 1
+2026-05-12 20:10:52,452 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:10:52,453 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:10:52,453 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: 1
+2026-05-12 20:10:53,128 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:10:53,129 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:10:53,130 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Could you please provide more context or specify which company you would like to inquire about?
+2026-05-12 20:10:53,130 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:20:03,839 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 20:20:03,841 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 20:20:03,846 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 20:20:03,872 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 20:20:03,873 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 20:20:21,450 - CLI - INFO - [CLI] Processing query: Can you recommend me a company
+2026-05-12 20:20:21,465 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:20:21,465 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:20:21,466 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Can you recommend me a company
+2026-05-12 20:20:22,055 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:20:22,086 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:20:22,087 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which company would you like me to recommend?
+2026-05-12 20:20:22,088 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:20:40,528 - CLI - INFO - [CLI] Resuming with clarification: tech company
+2026-05-12 20:20:40,533 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:20:40,534 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:20:40,534 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Can you recommend me a company
+2026-05-12 20:20:41,281 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:20:41,283 - ClarityAgent - INFO - [ClarityAgent] Status: needs_clarification
+2026-05-12 20:20:41,283 - ClarityAgent - INFO - [ClarityAgent] Clarification needed: Which type of company are you looking to invest in or learn more about?
+2026-05-12 20:20:41,284 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:24:32,266 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 20:24:32,268 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 20:24:32,276 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 20:24:32,315 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 20:24:32,316 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 20:24:44,697 - CLI - INFO - [CLI] Processing query: Provide a comprehensive research report on Hugging Face, focusing on their recent funding, leadership, and market position in the open-source AI space.
+2026-05-12 20:24:44,707 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:24:44,707 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:24:44,707 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Provide a comprehensive research report on Hugging Face, focusing on their recent funding, leadership, and market position in the open-source AI space.
+2026-05-12 20:24:45,655 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:24:45,683 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 20:24:45,683 - ClarityAgent - INFO - [ClarityAgent] Identified company: Hugging Face
+2026-05-12 20:24:45,684 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 20:24:45,685 - ResearchAgent - INFO - ==================================================
+2026-05-12 20:24:45,687 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 20:24:45,687 - ResearchAgent - INFO - [ResearchAgent] Company: Hugging Face
+2026-05-12 20:24:45,687 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 20:24:45,688 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 20:24:45,689 - SearchTools - INFO - [Tavily] Searching: Hugging Face company overview
+2026-05-12 20:24:49,234 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:24:49,234 - SearchTools - INFO - [Tavily] Searching: Hugging Face CEO founder
+2026-05-12 20:24:53,134 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:24:53,135 - SearchTools - INFO - [Tavily] Searching: Hugging Face latest news 2024 2025
+2026-05-12 20:24:56,712 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:24:56,713 - SearchTools - INFO - [Tavily] Searching: Hugging Face financial revenue
+2026-05-12 20:24:58,654 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:24:58,654 - SearchTools - INFO - [Tavily] Searching: Hugging Face competitors market position
+2026-05-12 20:25:01,015 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:25:01,019 - SearchTools - INFO - [Tavily] Multi-search complete: 15 unique results
+2026-05-12 20:25:01,023 - ResearchAgent - INFO - [ResearchAgent] Obtained 15 total results
+2026-05-12 20:25:03,483 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:25:03,487 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 20:25:03,487 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 20:25:03,488 - ResearchAgent - INFO - [ResearchAgent] Tracked 7 sources
+2026-05-12 20:25:03,488 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 20:25:03,491 - ReflectionAgent - INFO - ==================================================
+2026-05-12 20:25:03,492 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 20:25:03,492 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Hugging Face
+2026-05-12 20:25:03,493 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 20:25:03,493 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 20:25:04,471 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:25:04,474 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 20:25:04,474 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research report on Hugging Face covers various aspects such as company overview, leadership, financial information, recent news, market position, ...
+2026-05-12 20:25:04,476 - SynthesisAgent - INFO - ==================================================
+2026-05-12 20:25:04,477 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 20:25:04,477 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Hugging Face
+2026-05-12 20:25:04,478 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 7 sources
+2026-05-12 20:25:06,547 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:25:06,551 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (4592 chars)
+2026-05-12 20:25:06,551 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 20:27:16,997 - CLI - INFO - [CLI] Processing query: Tell me about Harvey AI.
+2026-05-12 20:27:17,003 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:27:17,003 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:27:17,004 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about Harvey AI.
+2026-05-12 20:27:17,510 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:27:17,514 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 20:27:17,514 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 20:27:17,516 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 20:27:17,518 - ResearchAgent - INFO - ==================================================
+2026-05-12 20:27:17,520 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 20:27:17,521 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 20:27:17,521 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 20:27:17,522 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 20:27:17,522 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 20:27:20,381 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:20,382 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 20:27:22,221 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:22,222 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 20:27:26,522 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:26,522 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 20:27:28,676 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:28,677 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 20:27:31,250 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:31,250 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 20:27:31,253 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 20:27:34,307 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:27:34,309 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 20:27:34,310 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 20:27:34,310 - ResearchAgent - INFO - [ResearchAgent] Tracked 8 sources
+2026-05-12 20:27:34,311 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 20:27:34,315 - ReflectionAgent - INFO - ==================================================
+2026-05-12 20:27:34,316 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 20:27:34,317 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 20:27:34,317 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 20:27:34,318 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 20:27:35,327 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:27:35,329 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 20:27:35,330 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on Harvey AI appears to be comprehensive, covering various aspects such as company overview, leadership, financial information, recent ne...
+2026-05-12 20:27:35,333 - SynthesisAgent - INFO - ==================================================
+2026-05-12 20:27:35,334 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 20:27:35,334 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 20:27:35,335 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 8 sources
+2026-05-12 20:27:38,399 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:27:38,402 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (5685 chars)
+2026-05-12 20:27:38,402 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 20:27:43,478 - CLI - INFO - [CLI] Processing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 20:27:43,484 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:27:43,484 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:27:43,485 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 20:27:43,677 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:27:43,678 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-05-12 20:27:57,446 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:27:57,448 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 20:27:57,448 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 20:27:57,449 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 20:27:57,450 - ResearchAgent - INFO - ==================================================
+2026-05-12 20:27:57,451 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 20:27:57,451 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 20:27:57,451 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 20:27:57,452 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 20:27:57,452 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 20:27:58,886 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:58,886 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 20:27:59,190 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:27:59,190 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 20:28:02,484 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:28:02,485 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 20:28:02,781 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:28:02,781 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 20:28:03,031 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:28:03,032 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 20:28:03,034 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 20:28:03,218 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:28:03,219 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 9.000000 seconds
+2026-05-12 20:28:15,061 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:28:15,065 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 20:28:15,066 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 20:28:15,066 - ResearchAgent - INFO - [ResearchAgent] Tracked 5 sources
+2026-05-12 20:28:15,067 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 20:28:15,069 - ReflectionAgent - INFO - ==================================================
+2026-05-12 20:28:15,069 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 20:28:15,070 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 20:28:15,070 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 20:28:15,071 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 20:28:15,171 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:28:15,172 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-05-12 20:28:27,247 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:28:27,249 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 20:28:27,249 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research provides a comprehensive overview of Harvey AI, including its products, services, leadership, financial information, and market position....
+2026-05-12 20:28:27,251 - SynthesisAgent - INFO - ==================================================
+2026-05-12 20:28:27,252 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 20:28:27,253 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 20:28:27,253 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 5 sources
+2026-05-12 20:28:27,348 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:28:27,349 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-05-12 20:28:33,699 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:28:33,708 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (4312 chars)
+2026-05-12 20:28:33,709 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 20:29:36,423 - CLI - INFO - [CLI] Processing query: What is the CEO's background?
+2026-05-12 20:29:36,429 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:29:36,429 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:29:36,430 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: What is the CEO's background?
+2026-05-12 20:29:37,902 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:29:37,904 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 20:29:37,904 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 20:29:37,905 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 20:29:37,906 - ResearchAgent - INFO - ==================================================
+2026-05-12 20:29:37,906 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 20:29:37,907 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 20:29:37,907 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 20:29:37,907 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 20:29:37,908 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 20:29:39,377 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:29:39,377 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 20:29:39,644 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:29:39,644 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 20:29:43,295 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:29:43,296 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 20:29:43,544 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:29:43,544 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 20:29:43,828 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:29:43,828 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 20:29:43,830 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 20:29:46,811 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:29:46,813 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 20:29:46,813 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 20:29:46,814 - ResearchAgent - INFO - [ResearchAgent] Tracked 7 sources
+2026-05-12 20:29:46,814 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 20:29:46,816 - ReflectionAgent - INFO - ==================================================
+2026-05-12 20:29:46,817 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 20:29:46,817 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 20:29:46,817 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 20:29:46,818 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 20:29:47,837 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:29:47,841 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 20:29:47,841 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research findings address the query about the CEO's background of Harvey AI, providing information on Winston Weinberg's role as CEO and cofounder...
+2026-05-12 20:29:47,845 - SynthesisAgent - INFO - ==================================================
+2026-05-12 20:29:47,845 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 20:29:47,846 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 20:29:47,846 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 7 sources
+2026-05-12 20:29:47,937 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:29:47,938 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-12 20:29:49,026 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:29:49,027 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-05-12 20:29:57,246 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:29:57,249 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (4095 chars)
+2026-05-12 20:29:57,249 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 20:30:43,839 - CLI - INFO - [CLI] Processing query: Research the exact Q1 2024 revenue figures, specific seed round investors, and internal employee count for the startup 'LangChain'.
+2026-05-12 20:30:43,845 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:30:43,845 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:30:43,846 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Research the exact Q1 2024 revenue figures, specific seed round investors, and internal employee count for the startup 'LangChain'.
+2026-05-12 20:30:43,854 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.458297 seconds
+2026-05-12 20:30:44,316 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 0.958549 seconds
+2026-05-12 20:30:45,278 - ClarityAgent - ERROR - [ClarityAgent] Error: Connection error.
+2026-05-12 20:30:45,278 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:35:20,347 - GraphVisualizer - INFO - [GraphVisualizer] Generating graph visualization
+2026-05-12 20:35:20,348 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 20:35:20,349 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 20:35:20,355 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 20:35:20,389 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 20:35:23,706 - GraphVisualizer - INFO - [GraphVisualizer] Graph saved to assets/graph_diagram.png
+2026-05-12 20:55:38,637 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 20:55:38,638 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 20:55:38,642 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 20:55:38,671 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 20:56:17,954 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:56:17,954 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:56:17,954 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about c-crypt
+2026-05-12 20:56:18,281 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:56:18,297 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 20:56:18,297 - ClarityAgent - INFO - [ClarityAgent] Identified company: c-crypt
+2026-05-12 20:56:18,297 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 20:56:18,306 - ResearchAgent - INFO - ==================================================
+2026-05-12 20:56:18,306 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 20:56:18,307 - ResearchAgent - INFO - [ResearchAgent] Company: c-crypt
+2026-05-12 20:56:18,307 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 20:56:18,308 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 20:56:18,308 - SearchTools - INFO - [Tavily] Searching: c-crypt company overview
+2026-05-12 20:56:21,991 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:56:21,991 - SearchTools - INFO - [Tavily] Searching: c-crypt CEO founder
+2026-05-12 20:56:24,854 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:56:24,854 - SearchTools - INFO - [Tavily] Searching: c-crypt latest news 2024 2025
+2026-05-12 20:56:31,739 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:56:31,739 - SearchTools - INFO - [Tavily] Searching: c-crypt financial revenue
+2026-05-12 20:56:34,209 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:56:34,209 - SearchTools - INFO - [Tavily] Searching: c-crypt competitors market position
+2026-05-12 20:56:36,844 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 20:56:36,844 - SearchTools - INFO - [Tavily] Multi-search complete: 15 unique results
+2026-05-12 20:56:36,846 - ResearchAgent - INFO - [ResearchAgent] Obtained 15 total results
+2026-05-12 20:56:40,394 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 20:56:40,396 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 6/10
+2026-05-12 20:56:40,396 - ResearchAgent - INFO - [ResearchAgent] Extracted 9 findings
+2026-05-12 20:56:40,397 - ResearchAgent - INFO - [ResearchAgent] Tracked 9 sources
+2026-05-12 20:56:40,397 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=6 >= 6)
+2026-05-12 20:56:40,398 - ReflectionAgent - INFO - ==================================================
+2026-05-12 20:56:40,399 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 20:56:40,399 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: c-crypt
+2026-05-12 20:56:40,399 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 6/10
+2026-05-12 20:56:40,399 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 20:56:40,493 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:56:40,494 - ReflectionAgent - ERROR - [ReflectionAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 1611. Please try again in 23m11.904s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 20:56:40,495 - SynthesisAgent - INFO - ==================================================
+2026-05-12 20:56:40,496 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 20:56:40,496 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: c-crypt
+2026-05-12 20:56:40,496 - SynthesisAgent - INFO - [SynthesisAgent] Using 9 findings and 9 sources
+2026-05-12 20:56:40,664 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:56:40,665 - SynthesisAgent - ERROR - [SynthesisAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 2081. Please try again in 29m57.984s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 20:57:44,678 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:57:44,678 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:57:44,679 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: CCRIPT agency
+2026-05-12 20:57:44,817 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:57:44,818 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99926, Requested 1608. Please try again in 22m5.376s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 20:57:44,818 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 20:58:05,539 - ClarityAgent - INFO - ==================================================
+2026-05-12 20:58:05,539 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 20:58:05,539 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: CCRIPT agency
+2026-05-12 20:58:05,678 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 20:58:05,679 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99902, Requested 1640. Please try again in 22m12.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 20:58:05,680 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 21:02:00,423 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 21:02:00,425 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 21:02:00,440 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 21:02:00,475 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
