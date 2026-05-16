@@ -35,9 +35,13 @@ footer {visibility: hidden;}
 }
 
 /* Global Typography */
-html, body, p, li, h1, h2, h3, h4, h5, h6, span, div {
+html, body, p, li, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Inter', sans-serif !important;
-	color: #F8FAFC !important; /* Soft white for readability */
+}
+
+/* Force text color to white, but DO NOT overwrite the icon font-families */
+.stApp * {
+	color: #F8FAFC !important; 
 }
 
 /* Adjust main container to remove top padding */
