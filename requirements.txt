@@ -9,3 +9,4 @@ streamlit
 typing-extensions
 duckduckgo-search
 langgraph-checkpoint-sqlite
+langchain-google-genaigit add requirements.txt
