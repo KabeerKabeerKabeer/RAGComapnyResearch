@@ -125,19 +125,26 @@ if "awaiting_clarification" not in st.session_state:
 config = {"configurable": {"thread_id": st.session_state.thread_id}}
 
 # --- MAIN CHAT INTERFACE ---
+# --- MAIN CHAT INTERFACE ---
 # Display chat history
 for msg in st.session_state.messages:
-	with st.chat_message(msg["role"]):
+	# Assign the correct emoji based on who is speaking
+	avatar_icon = "👤" if msg["role"] == "user" else "🤖"
+	
+	with st.chat_message(msg["role"], avatar=avatar_icon):
 		st.markdown(msg["content"])
 
 # --- CHAT INPUT & LOGIC ---
 if prompt := st.chat_input("Ask a Business inquiry"):
 	
 	st.session_state.messages.append({"role": "user", "content": prompt})
-	with st.chat_message("user"):
+	
+	# Force the user emoji here
+	with st.chat_message("user", avatar="👤"):
 		st.markdown(prompt)
 
-	with st.chat_message("assistant"):
+	# Force the AI emoji here
+	with st.chat_message("assistant", avatar="🤖"):
 		with st.status("Processing...", expanded=True) as status_container:
 			try:
 				if st.session_state.awaiting_clarification:
