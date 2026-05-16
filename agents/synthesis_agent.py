@@ -1,7 +1,7 @@
 from state import ResearchState
 from schemas.synthesis_schema import SynthesisOutput
 from prompts.synthesis_prompt import SYNTHESIS_PROMPT
-from config import llm
+from config import gemini_llm
 from utils.logger import synthesis_logger
 from langchain_core.messages import HumanMessage, AIMessage
 import json
@@ -41,7 +41,7 @@ def synthesis_agent(state: ResearchState) -> ResearchState:
     
     # Invoke LLM with structured output
     try:
-        response = llm.with_structured_output(SynthesisOutput).invoke([HumanMessage(content=prompt)])
+        response = gemini_llm.with_structured_output(SynthesisOutput).invoke([HumanMessage(content=prompt)])
         
         final_response = response.final_response
         

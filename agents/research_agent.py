@@ -1,7 +1,7 @@
 from state import ResearchState
 from schemas.research_schema import ResearchOutput
 from prompts.research_prompt import RESEARCH_PROMPT
-from config import llm
+from config import groq_llm
 from utils.logger import research_logger, search_logger
 from tools.tavily_search import TavilySearch
 from tools.duckduckgo_search import DuckDuckGoSearch
@@ -61,7 +61,7 @@ def research_agent(state: ResearchState) -> ResearchState:
     
     # Invoke LLM with structured output
     try:
-        response = llm.with_structured_output(ResearchOutput).invoke([HumanMessage(content=prompt)])
+        response = groq_llm.with_structured_output(ResearchOutput).invoke([HumanMessage(content=prompt)])
         
         research_logger.info(f"[ResearchAgent] Confidence Score: {response.confidence_score}/10")
         research_logger.info(f"[ResearchAgent] Extracted {len(response.findings)} findings")

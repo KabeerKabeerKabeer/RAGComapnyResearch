@@ -1,7 +1,7 @@
 from state import ResearchState
 from schemas.reflection_schema import ReflectionOutput
 from prompts.reflection_prompt import REFLECTION_PROMPT
-from config import llm
+from config import gemini_llm
 from utils.logger import reflection_logger
 from langchain_core.messages import HumanMessage
 import json
@@ -41,7 +41,7 @@ def reflection_agent(state: ResearchState) -> ResearchState:
     
     # Invoke LLM with structured output
     try:
-        response = llm.with_structured_output(ReflectionOutput).invoke([HumanMessage(content=prompt)])
+        response = gemini_llm.with_structured_output(ReflectionOutput).invoke([HumanMessage(content=prompt)])
         
         reflection_logger.info(f"[ReflectionAgent] Reflection complete")
         reflection_logger.info(f"[ReflectionAgent] Notes preview: {response.reflection_notes[:150]}...")

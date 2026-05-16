@@ -1,15 +1,23 @@
 import os
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 # Load environment variables
 load_dotenv()
 
-# Groq configuration with temperature=0 for deterministic outputs
-llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
-    temperature=0,
-    api_key=os.getenv("GROQ_API_KEY")
+# Groq: For fast, short-context routing (Clarity, Research, Validator)
+groq_llm = ChatGroq(
+	model="llama-3.1-8b-instant",
+	temperature=0,
+	api_key=os.getenv("GROQ_API_KEY")
+)
+
+# Gemini: For heavy reading and report writing (Reflection, Synthesis)
+gemini_llm = ChatGoogleGenerativeAI(
+	model="gemini-1.5-flash",
+	temperature=0,
+	api_key=os.getenv("GEMINI_API_KEY")
 )
 
 # Tavily API key

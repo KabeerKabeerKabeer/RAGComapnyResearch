@@ -1,15 +1,6 @@
 [theme]
-# Primary: #3366cc (Deep Trust Blue)
-primaryColor = "#3366cc"
-
-# Background: #FFFFFF (Surface)
-backgroundColor = "#FFFFFF"
-
-# Secondary Background: #F8F9FA (Subtle containers / Sidebar / User Bubbles)
-secondaryBackgroundColor = "#F8F9FA"
-
-# Text: #1A1A1A (Primary)
-textColor = "#1A1A1A"
-
-# Base font (Streamlit's native serif option)
-font = "serif"
+primaryColor = "#3B82F6"
+backgroundColor = "#020617"
+secondaryBackgroundColor = "#0F172A"
+textColor = "#F8FAFC"
+font = "sans serif"

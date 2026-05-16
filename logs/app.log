@@ -502,3 +502,428 @@
 2026-05-12 21:02:00,425 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
 2026-05-12 21:02:00,440 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
 2026-05-12 21:02:00,475 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 21:52:50,668 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 21:52:50,670 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 21:52:50,690 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 21:52:50,727 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 21:52:50,727 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 21:52:58,277 - CLI - INFO - [CLI] Processing query: Tell me about Harvey AI.
+2026-05-12 21:52:58,337 - ClarityAgent - INFO - ==================================================
+2026-05-12 21:52:58,338 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 21:52:58,340 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about Harvey AI.
+2026-05-12 21:52:58,890 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 21:52:58,893 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 96090, Requested 7097. Please try again in 45m53.568s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 21:52:58,894 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 21:53:18,358 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 21:53:18,360 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 21:53:18,380 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 21:53:18,423 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 21:53:18,423 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 21:53:23,579 - CLI - INFO - [CLI] Processing query: What is the CEO's background?
+2026-05-12 21:53:23,587 - ClarityAgent - INFO - ==================================================
+2026-05-12 21:53:23,587 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 21:53:23,588 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: What is the CEO's background?
+2026-05-12 21:53:23,872 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 21:53:23,874 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 96061, Requested 7105. Please try again in 45m35.424s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 21:53:23,875 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:09:58,823 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:09:58,828 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:09:58,947 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:09:59,028 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:09:59,028 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:10:06,609 - CLI - INFO - [CLI] Processing query: Tell me about Harvey AI
+2026-05-12 22:10:06,635 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:10:06,635 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:10:06,635 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about Harvey AI
+2026-05-12 22:10:07,067 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:10:07,068 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99672, Requested 7113. Please try again in 1h37m42.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:10:07,070 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:10:13,572 - CLI - INFO - [CLI] Resuming with clarification: Harvey AI
+2026-05-12 22:10:13,589 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:10:13,592 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:10:13,594 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about Harvey AI
+2026-05-12 22:10:13,783 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:10:13,784 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99664, Requested 7121. Please try again in 1h37m42.24s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:10:13,785 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:10:23,665 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:10:23,668 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:10:23,678 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:10:23,727 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:10:23,728 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:10:26,195 - CLI - INFO - [CLI] Processing query: clear
+2026-05-12 22:10:26,214 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:10:26,214 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:10:26,215 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: clear
+2026-05-12 22:10:26,600 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:10:26,602 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99649, Requested 7122. Please try again in 1h37m30.144s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:10:26,603 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:29:02,259 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:29:02,262 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:29:02,271 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:29:02,310 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:29:02,311 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:29:06,594 - CLI - INFO - [CLI] Processing query: Tell me about Harvey AI.
+2026-05-12 22:29:06,617 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:29:06,618 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:29:06,618 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about Harvey AI.
+2026-05-12 22:29:07,089 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:29:07,091 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98353, Requested 7130. Please try again in 1h18m57.312s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:29:07,093 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:30:30,138 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:30:30,141 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:30:30,165 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:30:30,248 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:30:30,276 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:30:40,384 - CLI - INFO - [CLI] Processing query: tell me about harveyAI
+2026-05-12 22:30:40,401 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:30:40,401 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:30:40,401 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about harveyAI
+2026-05-12 22:30:40,827 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:30:40,829 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kkpe8e42f5naqtjsbbn9sjm1` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98244, Requested 7139. Please try again in 1h17m30.912s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:30:40,830 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:34:50,332 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:34:50,333 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:34:50,344 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:34:50,362 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:34:50,363 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:34:56,041 - CLI - INFO - [CLI] Processing query: Tell me about Harvey AI.
+2026-05-12 22:34:56,050 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:34:56,050 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:34:56,051 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about Harvey AI.
+2026-05-12 22:34:57,592 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:34:57,617 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 22:34:57,618 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 22:34:57,618 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 22:34:57,619 - ResearchAgent - INFO - ==================================================
+2026-05-12 22:34:57,620 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 22:34:57,620 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 22:34:57,620 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 22:34:57,621 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 22:34:57,621 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 22:34:59,320 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:34:59,320 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 22:34:59,583 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:34:59,583 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 22:36:40,939 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:36:40,940 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:36:40,960 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:36:40,988 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:36:40,988 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:36:49,111 - CLI - INFO - [CLI] Processing query: Tell me about harvey AI
+2026-05-12 22:36:49,123 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:36:49,124 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:36:49,124 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about harvey AI
+2026-05-12 22:36:50,363 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:36:50,388 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 22:36:50,389 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 22:36:50,389 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 22:36:50,390 - ResearchAgent - INFO - ==================================================
+2026-05-12 22:36:50,391 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 22:36:50,391 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 22:36:50,392 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 22:36:50,392 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 22:36:50,392 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 22:36:53,396 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:36:53,397 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 22:36:55,156 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:36:55,156 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 22:36:59,099 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:36:59,100 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 22:37:01,015 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:37:01,015 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 22:37:02,758 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:37:02,758 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 22:37:02,767 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 22:37:05,785 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:37:05,811 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 22:37:05,812 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 22:37:05,812 - ResearchAgent - INFO - [ResearchAgent] Tracked 8 sources
+2026-05-12 22:37:05,812 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 22:37:05,814 - ReflectionAgent - INFO - ==================================================
+2026-05-12 22:37:05,815 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 22:37:05,815 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 22:37:05,815 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 22:37:05,815 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 22:37:07,169 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:37:07,194 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 22:37:07,195 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on Harvey AI appears to be comprehensive, covering various aspects such as company overview, leadership, financial information, recent ne...
+2026-05-12 22:37:07,196 - SynthesisAgent - INFO - ==================================================
+2026-05-12 22:37:07,196 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 22:37:07,197 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 22:37:07,197 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 8 sources
+2026-05-12 22:37:09,751 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:37:09,752 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (4301 chars)
+2026-05-12 22:37:09,753 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 22:37:26,330 - CLI - INFO - [CLI] Processing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 22:37:26,333 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:37:26,333 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:37:26,334 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 22:37:26,578 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:37:26,579 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 28.000000 seconds
+2026-05-12 22:39:23,339 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:39:23,341 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:39:23,362 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:39:23,387 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:39:23,388 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:39:30,409 - CLI - INFO - [CLI] Processing query: Tell me about harvey ai
+2026-05-12 22:39:30,421 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:39:30,421 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:39:30,421 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about harvey ai
+2026-05-12 22:39:31,900 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:39:31,920 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 22:39:31,921 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 22:39:31,922 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 22:39:31,924 - ResearchAgent - INFO - ==================================================
+2026-05-12 22:39:31,926 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 22:39:31,927 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 22:39:31,927 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 22:39:31,928 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 22:39:31,929 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 22:39:33,254 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:39:33,254 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 22:39:33,500 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:39:33,500 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 22:39:37,053 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:39:37,053 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 22:39:37,345 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:39:37,345 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 22:39:37,595 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:39:37,595 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 22:39:37,596 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 22:39:40,731 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:39:40,743 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 22:39:40,743 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 22:39:40,744 - ResearchAgent - INFO - [ResearchAgent] Tracked 8 sources
+2026-05-12 22:39:40,744 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 22:39:40,747 - ReflectionAgent - INFO - ==================================================
+2026-05-12 22:39:40,748 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 22:39:40,748 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 22:39:40,748 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 22:39:40,748 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 22:39:40,840 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:39:40,841 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-05-12 22:39:46,012 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:39:46,013 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-05-12 22:39:49,105 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:39:49,107 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 22:39:49,107 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on Harvey AI appears to be comprehensive, covering various aspects such as company overview, leadership, financial information, recent ne...
+2026-05-12 22:39:49,109 - SynthesisAgent - INFO - ==================================================
+2026-05-12 22:39:49,110 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 22:39:49,110 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 22:39:49,110 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 8 sources
+2026-05-12 22:39:49,199 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:39:49,199 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-05-12 22:40:02,717 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:40:02,719 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (4997 chars)
+2026-05-12 22:40:02,719 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 22:42:49,893 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:42:49,895 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:42:49,921 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:42:50,014 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:42:50,014 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:42:59,822 - CLI - INFO - [CLI] Processing query: tell me about harvey AI
+2026-05-12 22:42:59,845 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:42:59,845 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:42:59,845 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about harvey AI
+2026-05-12 22:43:00,274 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-12 22:43:00,275 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+2026-05-12 22:43:00,276 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:48:17,213 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:48:17,217 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:48:17,250 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:48:17,288 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:48:17,289 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:48:23,678 - CLI - INFO - [CLI] Processing query: Tell me about harvey AI
+2026-05-12 22:48:23,709 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:48:23,709 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:48:23,710 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about harvey AI
+2026-05-12 22:48:24,891 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:48:24,946 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 22:48:24,946 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 22:48:24,947 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 22:48:24,948 - ResearchAgent - INFO - ==================================================
+2026-05-12 22:48:24,949 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 22:48:24,950 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 22:48:24,950 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 22:48:24,950 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 22:48:24,951 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 22:48:26,400 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:48:26,400 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 22:48:26,653 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:48:26,654 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 22:48:30,339 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:48:30,339 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 22:48:30,593 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:48:30,593 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 22:48:31,039 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:48:31,039 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 22:48:31,157 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 22:48:34,419 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:48:34,421 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 22:48:34,421 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 22:48:34,421 - ResearchAgent - INFO - [ResearchAgent] Tracked 7 sources
+2026-05-12 22:48:34,422 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 22:48:34,424 - ReflectionAgent - INFO - ==================================================
+2026-05-12 22:48:34,425 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 22:48:34,425 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 22:48:34,425 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 22:48:34,426 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 22:48:34,526 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:48:34,526 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-05-12 22:48:41,667 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:48:41,669 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 22:48:41,669 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on Harvey AI appears to be comprehensive, covering various aspects such as company overview, leadership, financial information, recent ne...
+2026-05-12 22:48:41,670 - SynthesisAgent - INFO - ==================================================
+2026-05-12 22:48:41,671 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 22:48:41,671 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 22:48:41,671 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 7 sources
+2026-05-12 22:48:41,779 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:48:41,779 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-05-12 22:48:52,938 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:48:52,939 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 1.000000 seconds
+2026-05-12 22:48:54,017 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:48:54,018 - SynthesisAgent - ERROR - [SynthesisAgent] Error: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kremmmx5fddbysyejj2pbtyy` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Used 9404, Requested 3555. Please try again in 4.795s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:49:22,074 - CLI - INFO - [CLI] Processing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 22:49:22,098 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:49:22,101 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:49:22,104 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 22:49:22,315 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:49:22,316 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-05-12 22:49:34,451 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:49:34,453 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 22:49:34,453 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 22:49:34,453 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 22:49:34,454 - ResearchAgent - INFO - ==================================================
+2026-05-12 22:49:34,456 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 22:49:34,456 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 22:49:34,456 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 22:49:34,456 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 22:49:34,457 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 22:49:35,627 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:49:35,628 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 22:49:35,875 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:49:35,877 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 22:49:39,542 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:49:39,542 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 22:49:39,787 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:49:39,787 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 22:49:40,038 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:49:40,039 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 22:49:40,040 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 22:49:40,201 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:49:40,201 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-05-12 22:49:52,121 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:49:52,124 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 22:49:52,124 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 22:49:52,124 - ResearchAgent - INFO - [ResearchAgent] Tracked 7 sources
+2026-05-12 22:49:52,125 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 22:49:52,128 - ReflectionAgent - INFO - ==================================================
+2026-05-12 22:49:52,129 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 22:49:52,129 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 22:49:52,129 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 22:49:52,130 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 22:49:52,210 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:49:52,210 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 10.000000 seconds
+2026-05-12 22:50:02,392 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:50:02,392 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-05-12 22:50:08,299 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:50:08,319 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 22:50:08,319 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research findings address the query about Harvey AI's main competitors and market share, providing a list of competitors and stating that Harvey h...
+2026-05-12 22:50:08,323 - SynthesisAgent - INFO - ==================================================
+2026-05-12 22:50:08,323 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 22:50:08,323 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 22:50:08,324 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 7 sources
+2026-05-12 22:50:08,421 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:50:08,422 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 11.000000 seconds
+2026-05-12 22:50:21,916 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:50:21,922 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (4936 chars)
+2026-05-12 22:50:21,923 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 22:55:32,828 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:55:32,830 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:55:32,847 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:55:32,882 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:55:32,882 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:55:36,333 - CLI - INFO - [CLI] Processing query: tell me about harvey AI
+2026-05-12 22:55:36,343 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:55:36,343 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:55:36,344 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about harvey AI
+2026-05-12 22:55:36,775 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-05-12 22:55:36,778 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01kremmmx5fddbysyejj2pbtyy` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12307, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:55:36,779 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 22:58:01,507 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 22:58:01,508 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 22:58:01,533 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 22:58:01,574 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 22:58:01,576 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 22:58:08,426 - CLI - INFO - [CLI] Processing query: Tell me about harvey AI
+2026-05-12 22:58:08,441 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:58:08,442 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:58:08,442 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about harvey AI
+2026-05-12 22:58:09,925 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:58:09,940 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-12 22:58:09,940 - ClarityAgent - INFO - [ClarityAgent] Identified company: Harvey AI
+2026-05-12 22:58:09,941 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-12 22:58:09,942 - ResearchAgent - INFO - ==================================================
+2026-05-12 22:58:09,943 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-12 22:58:09,943 - ResearchAgent - INFO - [ResearchAgent] Company: Harvey AI
+2026-05-12 22:58:09,943 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-12 22:58:09,943 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-12 22:58:09,944 - SearchTools - INFO - [Tavily] Searching: Harvey AI company overview
+2026-05-12 22:58:11,139 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:58:11,139 - SearchTools - INFO - [Tavily] Searching: Harvey AI CEO founder
+2026-05-12 22:58:11,406 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:58:11,406 - SearchTools - INFO - [Tavily] Searching: Harvey AI latest news 2024 2025
+2026-05-12 22:58:15,234 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:58:15,235 - SearchTools - INFO - [Tavily] Searching: Harvey AI financial revenue
+2026-05-12 22:58:15,500 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:58:15,500 - SearchTools - INFO - [Tavily] Searching: Harvey AI competitors market position
+2026-05-12 22:58:15,768 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-12 22:58:15,768 - SearchTools - INFO - [Tavily] Multi-search complete: 14 unique results
+2026-05-12 22:58:15,769 - ResearchAgent - INFO - [ResearchAgent] Obtained 14 total results
+2026-05-12 22:58:15,927 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:58:15,928 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-05-12 22:58:22,658 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:58:22,666 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 8/10
+2026-05-12 22:58:22,667 - ResearchAgent - INFO - [ResearchAgent] Extracted 8 findings
+2026-05-12 22:58:22,667 - ResearchAgent - INFO - [ResearchAgent] Tracked 8 sources
+2026-05-12 22:58:22,667 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=8 >= 6)
+2026-05-12 22:58:22,669 - ReflectionAgent - INFO - ==================================================
+2026-05-12 22:58:22,670 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-12 22:58:22,670 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Harvey AI
+2026-05-12 22:58:22,670 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 8/10
+2026-05-12 22:58:22,670 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-12 22:58:22,772 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:58:22,772 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-05-12 22:58:30,951 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:58:30,952 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 6.000000 seconds
+2026-05-12 22:58:38,327 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:58:38,329 - ReflectionAgent - INFO - [ReflectionAgent] Reflection complete
+2026-05-12 22:58:38,329 - ReflectionAgent - INFO - [ReflectionAgent] Notes preview: The research on Harvey AI appears to be comprehensive, covering various aspects such as company overview, leadership, financial information, recent ne...
+2026-05-12 22:58:38,331 - SynthesisAgent - INFO - ==================================================
+2026-05-12 22:58:38,331 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-12 22:58:38,332 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Harvey AI
+2026-05-12 22:58:38,332 - SynthesisAgent - INFO - [SynthesisAgent] Using 8 findings and 8 sources
+2026-05-12 22:58:38,412 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-05-12 22:58:38,413 - groq._base_client - INFO - Retrying request to /openai/v1/chat/completions in 4.000000 seconds
+2026-05-12 22:58:45,296 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-12 22:58:45,298 - SynthesisAgent - INFO - [SynthesisAgent] Generated response (5765 chars)
+2026-05-12 22:58:45,298 - SynthesisAgent - INFO - [SynthesisAgent] Synthesis complete
+2026-05-12 22:59:04,896 - CLI - INFO - [CLI] Processing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 22:59:04,899 - ClarityAgent - INFO - ==================================================
+2026-05-12 22:59:04,900 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 22:59:04,900 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Who are their main competitors, and how does their market share compare?
+2026-05-12 22:59:05,170 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-05-12 22:59:05,171 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01krem1a0ff09twzeqn7b4twb7` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12630, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 22:59:05,171 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-12 23:15:22,307 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-12 23:15:22,309 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-12 23:15:22,327 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-12 23:15:22,358 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-12 23:15:22,358 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-12 23:15:24,037 - CLI - INFO - [CLI] Processing query: tell me about harvey AI
+2026-05-12 23:15:24,052 - ClarityAgent - INFO - ==================================================
+2026-05-12 23:15:24,053 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-12 23:15:24,053 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about harvey AI
+2026-05-12 23:15:24,547 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-05-12 23:15:24,548 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01krem1a0ff09twzeqn7b4twb7` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12439, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-12 23:15:24,549 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)

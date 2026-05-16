@@ -1,7 +1,7 @@
 from typing import Type, TypeVar, Optional
 from pydantic import BaseModel, ValidationError
 from langchain_core.messages import HumanMessage
-from config import llm
+from config import groq_llm
 from utils.logger import get_logger
 
 logger = get_logger("ParserRetry")
@@ -48,7 +48,7 @@ Malformed output:
 Return ONLY the corrected JSON, no explanation.
 """
         
-        repair_response = llm.invoke([HumanMessage(content=repair_prompt)])
+        repair_response = groq_llm.invoke([HumanMessage(content=repair_prompt)])
         repaired_text = repair_response.content
         
         parsed = schema.model_validate_json(repaired_text)

@@ -1,7 +1,7 @@
 from state import ResearchState
 from schemas.validator_schema import ValidatorOutput
 from prompts.validator_prompt import VALIDATOR_PROMPT
-from config import llm
+from config import groq_llm
 from utils.logger import validator_logger
 from langchain_core.messages import HumanMessage
 import json
@@ -41,7 +41,7 @@ def validator_agent(state: ResearchState) -> ResearchState:
     
     # Invoke LLM with structured output
     try:
-        response = llm.with_structured_output(ValidatorOutput).invoke([HumanMessage(content=prompt)])
+        response = groq_llm.with_structured_output(ValidatorOutput).invoke([HumanMessage(content=prompt)])
         
         validator_logger.info(f"[ValidatorAgent] Validation Result: {response.validation_result}")
         

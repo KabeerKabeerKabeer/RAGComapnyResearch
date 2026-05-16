@@ -1,7 +1,7 @@
 from state import ResearchState
 from schemas.clarity_schema import ClarityOutput
 from prompts.clarity_prompt import CLARITY_PROMPT
-from config import llm
+from config import groq_llm
 from utils.logger import clarity_logger
 from langchain_core.messages import HumanMessage, AIMessage
 import json
@@ -39,7 +39,7 @@ def clarity_agent(state: ResearchState) -> ResearchState:
     
     # Invoke LLM with structured output
     try:
-        response = llm.with_structured_output(ClarityOutput).invoke([HumanMessage(content=prompt)])
+        response = groq_llm.with_structured_output(ClarityOutput).invoke([HumanMessage(content=prompt)])
         
         clarity_logger.info(f"[ClarityAgent] Status: {response.clarity_status}")
         
