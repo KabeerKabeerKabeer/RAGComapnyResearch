@@ -9,4 +9,4 @@ streamlit
 typing-extensions
 duckduckgo-search
 langgraph-checkpoint-sqlite
-langchain-google-genaigit 
+langchain-google-genai
