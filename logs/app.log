@@ -927,3 +927,171 @@
 2026-05-12 23:15:24,547 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
 2026-05-12 23:15:24,548 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01krem1a0ff09twzeqn7b4twb7` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12439, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
 2026-05-12 23:15:24,549 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-16 20:50:44,992 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-16 20:50:44,996 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-16 20:50:45,041 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-16 20:50:45,161 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-16 20:50:45,162 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-16 20:50:55,095 - CLI - INFO - [CLI] Processing query: tell me about NVIDIA
+2026-05-16 20:50:55,118 - ClarityAgent - INFO - ==================================================
+2026-05-16 20:50:55,118 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-16 20:50:55,119 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about NVIDIA
+2026-05-16 20:50:56,514 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-16 20:50:56,516 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-05-16 20:50:56,516 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-16 20:52:26,383 - CLI - INFO - [CLI] Resuming with clarification: exit
+2026-05-16 20:52:26,393 - ClarityAgent - INFO - ==================================================
+2026-05-16 20:52:26,393 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-16 20:52:26,394 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about NVIDIA
+2026-05-16 20:52:28,058 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-05-16 20:52:28,061 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}
+2026-05-16 20:52:28,063 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-16 20:52:41,180 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-16 20:52:41,181 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-16 20:52:41,186 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-16 20:52:41,269 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-16 20:52:41,270 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-16 20:52:49,643 - CLI - INFO - [CLI] Processing query: Tell me about NVIDIA
+2026-05-16 20:52:49,661 - ClarityAgent - INFO - ==================================================
+2026-05-16 20:52:49,661 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-16 20:52:49,662 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about NVIDIA
+2026-05-16 20:52:52,141 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-05-16 20:52:52,144 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01krem1a0ff09twzeqn7b4twb7` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 12457, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-16 20:52:52,146 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-16 20:56:46,760 - CLI - INFO - [CLI] Resuming with clarification: exit
+2026-05-16 20:56:46,771 - ClarityAgent - INFO - ==================================================
+2026-05-16 20:56:46,771 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-16 20:56:46,772 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: Tell me about NVIDIA
+2026-05-16 20:56:48,954 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 413 Payload Too Large"
+2026-05-16 20:56:48,956 - ClarityAgent - ERROR - [ClarityAgent] Error: Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.1-8b-instant` in organization `org_01krem1a0ff09twzeqn7b4twb7` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Requested 12464, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-05-16 20:56:48,958 - GraphOrchestrator - INFO - [Routing] Clarity -> INTERRUPT (clarification needed)
+2026-05-16 21:03:21,207 - GraphOrchestrator - INFO - [Graph] Adding agent nodes
+2026-05-16 21:03:21,209 - GraphOrchestrator - INFO - [Graph] Adding conditional routing logic
+2026-05-16 21:03:21,218 - Memory - INFO - [Memory] Using SQLite checkpointer: checkpoints.sqlite
+2026-05-16 21:03:21,345 - GraphOrchestrator - INFO - [Graph] Graph compiled successfully
+2026-05-16 21:03:21,346 - CLI - INFO - [CLI] Research Assistant initialized
+2026-05-16 21:03:30,589 - CLI - INFO - [CLI] Processing query: tell me about nvidia
+2026-05-16 21:03:30,618 - ClarityAgent - INFO - ==================================================
+2026-05-16 21:03:30,618 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-16 21:03:30,619 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: tell me about nvidia
+2026-05-16 21:03:52,730 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 21:03:52,809 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-16 21:03:52,810 - ClarityAgent - INFO - [ClarityAgent] Identified company: NVIDIA
+2026-05-16 21:03:52,812 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-16 21:03:52,817 - ResearchAgent - INFO - ==================================================
+2026-05-16 21:03:52,819 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-16 21:03:52,820 - ResearchAgent - INFO - [ResearchAgent] Company: NVIDIA
+2026-05-16 21:03:52,823 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-16 21:03:52,837 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-16 21:03:52,850 - SearchTools - INFO - [Tavily] Searching: NVIDIA company overview
+2026-05-16 21:03:57,658 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:03:57,658 - SearchTools - INFO - [Tavily] Searching: NVIDIA CEO founder
+2026-05-16 21:03:59,799 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:03:59,803 - SearchTools - INFO - [Tavily] Searching: NVIDIA latest news 2024 2025
+2026-05-16 21:04:02,771 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:02,772 - SearchTools - INFO - [Tavily] Searching: NVIDIA financial revenue
+2026-05-16 21:04:05,085 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:05,085 - SearchTools - INFO - [Tavily] Searching: NVIDIA competitors market position
+2026-05-16 21:04:07,259 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:07,260 - SearchTools - INFO - [Tavily] Multi-search complete: 15 unique results
+2026-05-16 21:04:07,265 - ResearchAgent - INFO - [ResearchAgent] Obtained 15 total results
+2026-05-16 21:04:12,805 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-05-16 21:04:12,828 - ResearchAgent - ERROR - [ResearchAgent] Error processing results: Error code: 400 - {'error': {'message': "Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=ResearchOutput> {\n    "findings": [\n        {\n            "category": "Company Overview",\n            "information": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for e...",\n            "source_title": "NVIDIA Corporation (NVDA) Company Profile & Facts - Yahoo Finance",\n            "source_url": "https://finance.yahoo.com/quote/NVDA/profile/"\n        },\n        {\n            "category": "Company Overview",\n            "information": "NVIDIA is the world leader in accelerated computing and AI. The company was founded in 1993 and has a record full-year revenue of $215.9 billion. NVIDIA has 42,000+ employees in 38 countries.",\n            "source_title": "NVIDIA in Brief",\n            "source_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/corporate-nvidia-in-brief.pdf"\n        },\n        {\n            "category": "Company Overview",\n            "information": "NVIDIA Corporation (NVDA) is an American semiconductor company and a leading global manufacturer of high-end graphics processing units (GPUs). Based in Santa Clara, California, NVIDIA is the dominant supplier of high-end GPUs worldwide, with a 92% market share in the discrete graphics segment as of 2025.",\n            "source_title": "NVIDIA Corporation | History, GPUs, & Artificial Intelligence",\n            "source_url": "https://www.britannica.com/money/NVIDIA-Corporation"\n        },\n        {\n            "category": "Leadership",\n            "information": "Jensen Huang is the founder, president, and CEO of Nvidia, the world\'s most valuable company. As of May 2026, his net worth is estimated at over US$200 billion, making him the seventh-wealthiest individual in the world.",\n            "source_title": "Jensen Huang - Wikipedia",\n            "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang"\n        },\n        {\n            "category": "Financial Information",\n            "information": "NVIDIA reported record revenue for the fourth quarter ended January 25, 2026, of $68.1 billion, up 20% from the previous quarter and up 73% from a year ago. For fiscal 2026, revenue was $215.9 billion, up 65% from a year ago.",\n            "source_title": "NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026",\n            "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026"\n        },\n        {\n            "category": "Financial Information",\n            "information": "NVIDIA reported record revenue for the third quarter ended October 26, 2025, of $57.0 billion, up 22% from the previous quarter and up 62% from a year ago.",\n            "source_title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2026",\n            "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026"\n        },\n        {\n            "category": "Competitors",\n            "information": "AMD has been Nvidia’s main rival ever since their gaming days, but both companies now derive most of their revenue from selling chips and services to data centers. AMD isn’t quite as specialized in AI chips as Nvidia is, and it has a fraction of its market share.",\n            "source_title": "Nvidia Competitors: Who Are the AI Chip Alternatives? - NerdWallet",\n            "source_url": "https://www.nerdwallet.com/investing/learn/nvidia-competitors"\n        },\n        {\n            "category": "Competitors",\n            "information": "Nvidia\'s ecosystem is strengthened by its proprietary CUDA software stack and full-stack AI infrastructure. Its competitive landscape is dynamic, shaped by rapid technological innovation, evolving customer needs, and the rise of AI workloads.",\n            "source_title": "Nvidia\'s Top Competitors & Peers - Hudson Labs",\n            "source_url": "https://www.hudson-labs.com/research/nvidias-top-competitors-peers"\n        }\n    ],\n    "confidence_score": 8\n}'}}
+2026-05-16 21:04:12,832 - GraphOrchestrator - INFO - [Routing] Research -> Validator (confidence=3 < 6)
+2026-05-16 21:04:12,842 - ValidatorAgent - INFO - ==================================================
+2026-05-16 21:04:12,843 - ValidatorAgent - INFO - [ValidatorAgent] Starting validation
+2026-05-16 21:04:12,845 - ValidatorAgent - INFO - [ValidatorAgent] Evaluating 5 findings
+2026-05-16 21:04:12,846 - ValidatorAgent - INFO - [ValidatorAgent] Current confidence: 3/10
+2026-05-16 21:04:12,847 - ValidatorAgent - INFO - [ValidatorAgent] Attempt: 1/3
+2026-05-16 21:04:15,219 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 21:04:15,223 - ValidatorAgent - INFO - [ValidatorAgent] Validation Result: insufficient
+2026-05-16 21:04:15,224 - ValidatorAgent - INFO - [ValidatorAgent] Missing Topics: Financial Information, Recent News/Developments
+2026-05-16 21:04:15,224 - ValidatorAgent - INFO - [ValidatorAgent] Notes: The research findings provide a general overview of NVIDIA, but lack specific financial information ...
+2026-05-16 21:04:15,227 - GraphOrchestrator - INFO - [Routing] Validator -> Research (retry 1/3)
+2026-05-16 21:04:15,232 - ResearchAgent - INFO - ==================================================
+2026-05-16 21:04:15,233 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-16 21:04:15,233 - ResearchAgent - INFO - [ResearchAgent] Company: NVIDIA
+2026-05-16 21:04:15,234 - ResearchAgent - INFO - [ResearchAgent] Attempt: 2/3
+2026-05-16 21:04:15,234 - ResearchAgent - INFO - [ResearchAgent] Focusing on missing topics: ['Financial Information', 'Recent News/Developments']
+2026-05-16 21:04:15,235 - ResearchAgent - INFO - [ResearchAgent] Generated 7 search queries
+2026-05-16 21:04:15,235 - SearchTools - INFO - [Tavily] Searching: NVIDIA company overview
+2026-05-16 21:04:21,536 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:21,537 - SearchTools - INFO - [Tavily] Searching: NVIDIA CEO founder
+2026-05-16 21:04:21,959 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:21,959 - SearchTools - INFO - [Tavily] Searching: NVIDIA latest news 2024 2025
+2026-05-16 21:04:25,070 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:25,070 - SearchTools - INFO - [Tavily] Searching: NVIDIA financial revenue
+2026-05-16 21:04:25,845 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:25,845 - SearchTools - INFO - [Tavily] Searching: NVIDIA competitors market position
+2026-05-16 21:04:26,336 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:26,337 - SearchTools - INFO - [Tavily] Searching: NVIDIA revenue earnings funding
+2026-05-16 21:04:30,342 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:30,343 - SearchTools - INFO - [Tavily] Searching: NVIDIA recent developments announcements
+2026-05-16 21:04:35,203 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:04:35,203 - SearchTools - INFO - [Tavily] Multi-search complete: 19 unique results
+2026-05-16 21:04:35,206 - ResearchAgent - INFO - [ResearchAgent] Obtained 19 total results
+2026-05-16 21:04:57,655 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 21:04:58,461 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 6/10
+2026-05-16 21:04:58,462 - ResearchAgent - INFO - [ResearchAgent] Extracted 1 findings
+2026-05-16 21:04:58,464 - ResearchAgent - INFO - [ResearchAgent] Tracked 1 sources
+2026-05-16 21:04:58,468 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=6 >= 6)
+2026-05-16 21:04:58,479 - ReflectionAgent - INFO - ==================================================
+2026-05-16 21:04:58,480 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-16 21:04:58,480 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: NVIDIA
+2026-05-16 21:04:58,481 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 6/10
+2026-05-16 21:04:58,482 - ReflectionAgent - INFO - [ReflectionAgent] Validation: insufficient
+2026-05-16 21:04:58,490 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-05-16 21:05:13,681 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-05-16 21:05:13,683 - ReflectionAgent - ERROR - [ReflectionAgent] Error: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-05-16 21:05:13,690 - SynthesisAgent - INFO - ==================================================
+2026-05-16 21:05:13,690 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-16 21:05:13,691 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: NVIDIA
+2026-05-16 21:05:13,691 - SynthesisAgent - INFO - [SynthesisAgent] Using 1 findings and 1 sources
+2026-05-16 21:05:13,696 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-05-16 21:05:14,088 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-05-16 21:05:14,092 - SynthesisAgent - ERROR - [SynthesisAgent] Error: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-05-16 21:05:28,475 - CLI - INFO - [CLI] Processing query: How will the new antitrust regulations affect their bottom line next year?
+2026-05-16 21:05:28,489 - ClarityAgent - INFO - ==================================================
+2026-05-16 21:05:28,491 - ClarityAgent - INFO - [ClarityAgent] Starting query analysis
+2026-05-16 21:05:28,491 - ClarityAgent - INFO - [ClarityAgent] Analyzing query: How will the new antitrust regulations affect their bottom line next year?
+2026-05-16 21:05:31,346 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 21:05:31,350 - ClarityAgent - INFO - [ClarityAgent] Status: clear
+2026-05-16 21:05:31,350 - ClarityAgent - INFO - [ClarityAgent] Identified company: Nvidia
+2026-05-16 21:05:31,352 - GraphOrchestrator - INFO - [Routing] Clarity -> Research
+2026-05-16 21:05:31,355 - ResearchAgent - INFO - ==================================================
+2026-05-16 21:05:31,359 - ResearchAgent - INFO - [ResearchAgent] Starting research
+2026-05-16 21:05:31,359 - ResearchAgent - INFO - [ResearchAgent] Company: Nvidia
+2026-05-16 21:05:31,360 - ResearchAgent - INFO - [ResearchAgent] Attempt: 1/3
+2026-05-16 21:05:31,361 - ResearchAgent - INFO - [ResearchAgent] Generated 5 search queries
+2026-05-16 21:05:31,362 - SearchTools - INFO - [Tavily] Searching: Nvidia company overview
+2026-05-16 21:05:34,047 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:05:34,048 - SearchTools - INFO - [Tavily] Searching: Nvidia CEO founder
+2026-05-16 21:05:34,321 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:05:34,321 - SearchTools - INFO - [Tavily] Searching: Nvidia latest news 2024 2025
+2026-05-16 21:05:37,818 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:05:37,819 - SearchTools - INFO - [Tavily] Searching: Nvidia financial revenue
+2026-05-16 21:05:38,270 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:05:38,271 - SearchTools - INFO - [Tavily] Searching: Nvidia competitors market position
+2026-05-16 21:05:38,911 - SearchTools - INFO - [Tavily] Found 3 results
+2026-05-16 21:05:38,912 - SearchTools - INFO - [Tavily] Multi-search complete: 15 unique results
+2026-05-16 21:05:38,916 - ResearchAgent - INFO - [ResearchAgent] Obtained 15 total results
+2026-05-16 21:05:46,649 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-16 21:05:46,671 - ResearchAgent - INFO - [ResearchAgent] Confidence Score: 6/10
+2026-05-16 21:05:46,672 - ResearchAgent - INFO - [ResearchAgent] Extracted 1 findings
+2026-05-16 21:05:46,673 - ResearchAgent - INFO - [ResearchAgent] Tracked 1 sources
+2026-05-16 21:05:46,675 - GraphOrchestrator - INFO - [Routing] Research -> Reflection (confidence=6 >= 6)
+2026-05-16 21:05:46,681 - ReflectionAgent - INFO - ==================================================
+2026-05-16 21:05:46,682 - ReflectionAgent - INFO - [ReflectionAgent] Starting self-evaluation
+2026-05-16 21:05:46,682 - ReflectionAgent - INFO - [ReflectionAgent] Evaluating research on: Nvidia
+2026-05-16 21:05:46,683 - ReflectionAgent - INFO - [ReflectionAgent] Confidence: 6/10
+2026-05-16 21:05:46,683 - ReflectionAgent - INFO - [ReflectionAgent] Validation: None
+2026-05-16 21:05:46,687 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-05-16 21:05:49,176 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-05-16 21:05:49,179 - ReflectionAgent - ERROR - [ReflectionAgent] Error: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-05-16 21:05:49,185 - SynthesisAgent - INFO - ==================================================
+2026-05-16 21:05:49,186 - SynthesisAgent - INFO - [SynthesisAgent] Creating final response
+2026-05-16 21:05:49,186 - SynthesisAgent - INFO - [SynthesisAgent] Synthesizing research for: Nvidia
+2026-05-16 21:05:49,188 - SynthesisAgent - INFO - [SynthesisAgent] Using 1 findings and 1 sources
+2026-05-16 21:05:49,193 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-05-16 21:05:50,046 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-05-16 21:05:50,048 - SynthesisAgent - ERROR - [SynthesisAgent] Error: Error calling model 'gemini-1.5-flash' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
